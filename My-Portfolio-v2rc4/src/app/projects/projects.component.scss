@@ -1,0 +1,25 @@
+#projects-wrapper {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#projects-title {
+  margin-top: 100px;
+}
+#projects-end {
+  margin-bottom: 100px;
+}
+.project-content {
+  display: flex;
+  margin: 10px 0;
+}
+.project {
+  background-color: white;
+  border: 1px solid gray;
+  height: 25vw;
+  width: 45vw;
+  margin: 15px;
+}

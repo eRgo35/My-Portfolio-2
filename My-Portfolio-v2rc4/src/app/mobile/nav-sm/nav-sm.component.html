@@ -1,0 +1,13 @@
+<div class="menu-wrapper" fxLayoutAlign="end center">
+    <div id="menu" class="menu-button" [ngClass]="{'open': isActive}" (click)="isActive = !isActive">
+        <div class="menu-burger"></div>
+    </div>
+    <div class="navigation">
+        <div class="items">
+            <a (click)="isActive = !isActive" href="#hello">hello</a>
+            <a (click)="isActive = !isActive" href="#projects">projects</a>
+            <a (click)="isActive = !isActive" href="#speedcubing">speedcubing</a>
+            <a (click)="isActive = !isActive" href="#magic">magic</a>
+        </div>
+    </div>
+</div>

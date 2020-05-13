@@ -1,0 +1,27 @@
+menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    color: #a7a7a7;
+    font-size: 2.5em;
+    font-weight: 200;
+    font-family: Roboto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.header_col {
+    margin: 2em;
+    margin-top: 30%;
+}
+.header_img {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bold {
+    font-weight: 300;
+    color: white;
+}

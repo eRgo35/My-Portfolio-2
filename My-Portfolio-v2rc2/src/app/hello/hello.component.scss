@@ -1,0 +1,175 @@
+// * {
+//     outline: 1px solid red;
+// }
+#hello {
+    display: flex;
+    position: relative;
+    font-size: 8em;
+    font-weight: 500;
+    margin: 5vw 0 1vw;
+    font-family: 'Yeseva One';
+    line-height: 1;
+    .portrait {
+        display: none;
+    }
+    .landscape {
+        display: block;
+    }
+}
+#live-hello {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    line-height: 1;
+    height: 1em;
+    color: #202121; 
+    cursor: pointer;
+}
+#name {
+    font-size: 8em;
+    font-weight: 400;
+    margin: 0 0 1vw;
+    font-family: 'Yeseva One';
+}
+#email {
+    margin: 1vw 0 12vh;
+    a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+}
+#social {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+}
+@keyframes slide {
+    0% {margin-top:-4em;}
+    20% {margin-top:-4em;}
+    25% {margin-top:-3em;}
+    45% {margin-top:-3em;}
+    50% {margin-top:-2em;}
+    70% {margin-top:-2em;}
+    75% {margin-top:-1em;}
+    95% {margin-top:-1em;}
+    100% {margin-top:0em;}
+  }
+.live1 {
+    animation: slide 20s linear infinite;
+}
+svg {
+    width: 1.2em;
+    height: 1.2em;
+    padding: 10px;
+    border-radius: 50%;
+    fill: white;
+}
+.links {
+    border-radius: 50%;
+}
+.light-theme {
+    background: white !important;
+    color: #111212 !important;
+    #email a {
+        color: #111212 !important;
+        &:hover {
+            color: #6b6b6b !important;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+    #menu a {
+        transition: color 0.3s ease-in-out;
+        &:hover {
+            color: #6b6b6b !important;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+    a:hover {
+        svg {
+            fill: #6b6b6b; 
+            transition: fill 0.3s ease-in-out;
+        }
+    }
+    svg {
+        fill: #111212;
+        transition: fill 0.3s ease-in-out;
+    }
+}
+.dark-theme {
+    background: #111212 !important;
+    color: white !important;
+    #email a {
+        color: white !important;
+        &:hover {
+            color: #6b6b6b !important;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+    #menu a {
+        transition: color 0.3s ease-in-out;
+        &:hover {
+            color: #6b6b6b !important;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+    a:hover {
+        svg {
+            fill: #6b6b6b; 
+            transition: fill 0.3s ease-in-out;
+        }
+    }
+    svg {
+        fill: white;
+        transition: fill 0.3s ease-in-out;
+    }
+}
+.light-hello {
+    color: #d9d9d9 !important;
+}
+.dark-hello {
+    color: #202121 !important; 
+}
+
+@media only screen and (max-width: 600px) {
+    #social {
+        display: flex;
+        justify-content: space-between;
+        width: 25vw;
+    }
+    #hello {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        font-size: 4em;
+        font-weight: 500;
+        margin: 5vw 0 1vw;
+        font-family: 'Yeseva One';
+        line-height: 1;
+        .portrait {
+            display: block;
+        }
+        .landscape {
+            display: none;
+        }
+        #live-hello {
+            font-size: 1.5em;
+        }
+    }
+    .portrait {
+        display: block;
+    }
+    .landscape {
+        display: none;
+    }
+    #name {
+        font-size: 4em;
+        margin-bottom: 5vh;
+    }
+    #social {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.5em;
+        width: 100%;
+    }
+}

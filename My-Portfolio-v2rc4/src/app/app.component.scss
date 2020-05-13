@@ -1,0 +1,12 @@
+#hello {
+    position: relative;
+}
+#nav-sticker {
+    position: sticky;
+    top: 0;
+    background: black;
+    z-index: 1000;
+}
+app-nav {
+    height: 64px;
+}

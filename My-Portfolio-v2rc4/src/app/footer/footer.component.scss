@@ -1,0 +1,22 @@
+#footer-wrapper {
+  height: 150px;
+  font-size: 1.2em;
+  position: relative;
+}
+#footer-content {
+  width: 90vw;
+
+  a {
+    color: white;
+    text-decoration: none;
+    text-align: right;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-item {
+  width: 220px;
+}
