@@ -9,7 +9,10 @@ export class ProjectsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
+  goto(e) {
+    window.location.href = e;
+  }
 }

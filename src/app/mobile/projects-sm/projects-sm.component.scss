@@ -1,33 +1,26 @@
 #projects-wrapper {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  flex-direction: column;
 }
 
 #projects-title {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 #projects-end {
-  margin-bottom: 100px;
-}
-
-.project-content {
-  display: flex;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 .project {
   position: relative;
-  height: 25vw;
-  width: 45vw;
+  width: 90vw;
   margin: 15px;
   #project-desc {
-    font-size: 10vh;
+    font-size: 5vh;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -45,7 +38,7 @@
     text-align: center;
     cursor: pointer;
   }
-  &:hover #project-desc {
+  &:hover #project-desc, &:focus #project-desc{
     visibility: visible;
     opacity: 1;
   }
@@ -53,7 +46,7 @@
 }
 
 .bio {
-  width: 90vw;
-  font-size: 5vh;
+  width: 90%;
+  font-size: 1.3em;
   text-align: justify;
 }

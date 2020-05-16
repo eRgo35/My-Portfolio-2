@@ -2,23 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NavigationComponent } from './navigation/navigation.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { NavComponent } from './nav/nav.component';
 import { HelloComponent } from './hello/hello.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { SpeedcubingComponent } from './speedcubing/speedcubing.component';
-import { MagicComponent } from './magic/magic.component';
 import { FooterComponent } from './footer/footer.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { NavSmComponent } from './mobile/nav-sm/nav-sm.component';
+import { HelloSmComponent } from './mobile/hello-sm/hello-sm.component';
+import { ProjectsSmComponent } from './mobile/projects-sm/projects-sm.component';
+import { FooterSmComponent } from './mobile/footer-sm/footer-sm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
+    NavComponent,
     HelloComponent,
     ProjectsComponent,
-    SpeedcubingComponent,
-    MagicComponent,
-    FooterComponent
+    FooterComponent,
+    NavSmComponent,
+    HelloSmComponent,
+    ProjectsSmComponent,
+    FooterSmComponent
   ],
   imports: [
     BrowserModule,
