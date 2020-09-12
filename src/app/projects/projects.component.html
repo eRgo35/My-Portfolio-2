@@ -1,66 +1,79 @@
-<div id="info" fxLayoutAlign="center center"></div>
-<div id="projects-title" fxLayoutAlign="center center">&lt;info&gt;</div>
-<div id="projects-wrapper">
-  <div class="project-content info" data-aos="fade-left" fxLayoutAlign="center center">
-    <div class="bio" fxLayoutAlign="space-between top" fxLayoutGap="40px">
-      <span>Michał Czyż is a high school student living in Poland. Michał is a starting Web Developer creating websites
-        mainly in Angular. He also codes in i.a Python, VB.NET and a bit in C#. Michał is also a speedcuber and a
-        beginner magician.<br><br>On this website, you can find out more about his hobbies and projects. Just scroll
-        down!</span>
-      <img src="../../assets/me.webp" height="600vh" alt="Happy Michael">
+<div id="content-wrapper">
+  <div id="info" fxLayoutAlign="center center"></div>
+  <div id="projects-title" fxLayoutAlign="center center">&lt;info&gt;</div>
+  <div id="info-card">
+    <div id="projects-wrapper">
+      <div class="project-content info" fxLayoutAlign="center center">
+        <div class="bio" fxLayoutAlign="space-between top" fxLayoutGap="40px">
+          <span data-aos="fade-right">Michał Czyż is a high school student living in Poland. Michał is a starting Web
+            Developer creating websites
+            mainly in Angular. He also codes in i.a Python, VB.NET and a bit in C#. Michał is also a speedcuber and a
+            beginner magician.<br><br>On this website, you can find out more about his hobbies and projects. Just scroll
+            down!</span>
+          <img src="../../assets/me.webp" height="600vh" alt="Happy Michael" data-aos="fade-left">
+        </div>
+      </div>
     </div>
   </div>
+  <div id="projects-end" fxLayoutAlign="center center">&lt;/info&gt;</div>
+  <div class="background1"></div>
+  <div id="projects" fxLayoutAlign="center center"></div>
+  <div id="projects-card">
+    <div id="projects-title" fxLayoutAlign="center center">&lt;projects&gt;</div>
+    <div id="projects-wrapper">
+      <div class="project-content">
+        <div class="project" data-aos="fade-up" data-aos-duration="700" (click)="goto('https://tsi.mczyz.ml')">
+          <img src="../../assets/tsi.webp" width="100%">
+          <div id="project-desc">
+            <span id="project-desc-text">Project TSI</span>
+          </div>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
+          (click)="goto('https://js-calc.cf')">
+          <img src="../../assets/jscalc.webp" width="100%">
+          <div id="project-desc">
+            <span id="project-desc-text">JS-CALC</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-content">
+        <div class="project" data-aos="fade-up" data-aos-duration="700" (click)="goto('https://michalczyz.ml')">
+          <img src="../../assets/portfolio1.webp" width="100%">
+          <div id="project-desc">
+            <span id="project-desc-text">My Portfolio v1.0</span>
+          </div>
+        </div>
+        <div class="project" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
+          (click)="goto('https://mczyz.ml/assets/cpp-apps/Telephone_Number_Converter_1.0.1.exe')">
+          <img src="../../assets/number-converter.webp" width="100%">
+          <div id="project-desc">
+            <span id="project-desc-text">Telephone Number Converter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects-end" fxLayoutAlign="center center">&lt;/projects&gt;</div>
+  </div>
+  <div class="background2"></div>
+  <div id="hobbies" fxLayoutAlign="center center"></div>
+  <div id="projects-title" fxLayoutAlign="center center">&lt;hobbies&gt;</div>
+  <div id="projects-wrapper">
+    <div class="project-content">
+      <div class="project" data-aos="fade-right" data-aos-duration="700"
+        (click)="goto('https://www.youtube.com/channel/UCiEQ8ZDBKqxdOTt1DVnoyQQ')">
+        <img src="../../assets/google-earth.webp" width="100%">
+        <div id="project-desc">
+          <span id="project-desc-text">Google Earth Studio Videos</span>
+        </div>
+      </div>
+      <div class="project" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700"
+        (click)="goto('https://www.youtube.com/channel/UCiEQ8ZDBKqxdOTt1DVnoyQQ')">
+        <img src="../../assets/portal.webp" width="100%">
+        <div id="project-desc">
+          <span id="project-desc-text">Portal Speedruns Videos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="projects-end" fxLayoutAlign="center center">&lt;/hobbies&gt;</div>
 </div>
-<div id="projects-end" fxLayoutAlign="center center">&lt;/info&gt;</div>
-<div id="projects" fxLayoutAlign="center center"></div>
-<div id="projects-title" fxLayoutAlign="center center">&lt;projects&gt;</div>
-<div id="projects-wrapper">
-  <div class="project-content">
-    <div class="project" data-aos="fade-up" data-aos-duration="700" (click)="goto('https://tsi.mczyz.ml')">
-      <img src="../../assets/tsi.webp" width="100%">
-      <div id="project-desc">
-        <span id="project-desc-text">Project TSI</span>
-      </div>
-    </div>
-    <div class="project" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" (click)="goto('https://js-calc.cf')">
-      <img src="../../assets/jscalc.webp" width="100%">
-      <div id="project-desc">
-        <span id="project-desc-text">JS-CALC</span>
-      </div>
-    </div>
-  </div>
-  <div class="project-content">
-    <div class="project" data-aos="fade-up" data-aos-duration="700" (click)="goto('https://michalczyz.ml')">
-      <img src="../../assets/portfolio1.webp" width="100%">
-      <div id="project-desc">
-        <span id="project-desc-text">My Portfolio v1.0</span>
-      </div>
-    </div>
-    <div class="project" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" (click)="goto('https://mczyz.ml/assets/cpp-apps/Telephone_Number_Converter_1.0.1.exe')">
-      <img src="../../assets/number-converter.webp" width="100%">
-      <div id="project-desc">
-        <span id="project-desc-text">Telephone Number Converter</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="projects-end" fxLayoutAlign="center center">&lt;/projects&gt;</div>
-<div id="hobbies" fxLayoutAlign="center center"></div>
-<div id="projects-title" fxLayoutAlign="center center">&lt;hobbies&gt;</div>
-<div id="projects-wrapper">
-  <div class="project-content">
-    <div class="project" data-aos="fade-right" data-aos-duration="700" (click)="goto('https://www.youtube.com/channel/UCiEQ8ZDBKqxdOTt1DVnoyQQ')">
-      <img src="../../assets/google-earth.webp" width="100%">
-      <div id="project-desc">
-        <span id="project-desc-text">Google Earth Studio Videos</span>
-      </div>
-    </div>
-    <div class="project" data-aos="fade-left" data-aos-delay="100" data-aos-duration="700" (click)="goto('https://www.youtube.com/channel/UCiEQ8ZDBKqxdOTt1DVnoyQQ')">
-      <img src="../../assets/portal.webp" width="100%">
-      <div id="project-desc">
-        <span id="project-desc-text">Portal Speedruns Videos</span>
-      </div>
-    </div>
-  </div>
-</div>
-<div id="projects-end" fxLayoutAlign="center center">&lt;/hobbies&gt;</div>
